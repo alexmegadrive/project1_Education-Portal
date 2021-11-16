@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор | Education Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts/calc.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <div class="logo-button">Логотип</div>
+        <div class="logo-title"><p class="logo-title-text">Заголовок на главной</p></div>
+    </div>
+    <div class="menu-container">
+        <div class="menu-button">Таблица Тегов</div>
+        <div class="menu-button">Видео</div>
+        <div class="menu-button">Аудио</div>
+        <div class="menu-button">Калькулятор</div>
+    </div>
+</header>
+<main>
+    <div class="calc-container">
+
+        <div class="calc-title">Калькулятор</div>
+        <div class="calc-body">
+            <textarea id="numpad-textarea"> </textarea>
+                <div class="numpad-container">
+                <div class="numpad-row">
+                    <button onclick="sumNumbers()">+</button>
+                    <button class="number" onclick="minusNumbers()">-</button>
+                    <button  onclick="multiplyNumbers('*')">*</button>
+                    <button onclick="cancelNumber()">C</button>
+                    <button onclick="rootNumbers()">√</button>
+                </div> <div class="numpad-row">
+                    <button class="number" onclick="enterNumber(7)">7</button>
+                    <button class="number" onclick="enterNumber(8)">8</button>
+                    <button class="number" onclick="enterNumber(9)">9</button>
+                    <button onclick="divideNumbers()">/</button>
+                    <button>ln</button>
+                </div> <div class="numpad-row">
+                    <button class="number" onclick="enterNumber(4)">4</button>
+                    <button class="number"  onclick="enterNumber(5)">5</button>
+                    <button class="number"  onclick="enterNumber(6)">6</button>
+                    <button onclick="expNumbers()">x^n</button>
+                    <button onclick="Percentage()">%</button>
+                </div> <div class="numpad-row">
+                    <button class="number"  onclick="enterNumber(1)">1</button>
+                    <button class="number"  onclick="enterNumber(2)">2</button>
+                    <button class="number"  onclick="enterNumber(3)">3</button>
+                    <button class="number"  onclick="enterNumber(0)">0</button>
+                    <button  onclick="Totals()">=</button>
+                </div>
+                </div>
+        </div>
+    </div>
+
+
+</main>
+<footer>
+    <div class="footer__container">
+        <div class="footer__container_row1">
+           <div class="footer-block-wrapper"> <div class="logo-footer footer-block-wrapper">Логотип</div></div>
+            <div class="footer_text footer-block-wrapper ">Lorem ipsum dolor. sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+            <div class="footer_button_container footer-block-wrapper"><div><input type="button" value="Окей" class="footer_button"></div></div>
+        </div>
+        <div class="footer__container_row2">
+            <div class="div_2021">2021</div>
+            <div class="div-licence"><a href="test.html">Лицензионное соглашение</a></div></div>
+    </div>
+</footer>
+</body>
+</html>
