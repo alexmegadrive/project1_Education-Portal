@@ -51,6 +51,9 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
 
 .header_profile_container {
     width: 300px;
@@ -308,6 +311,10 @@ font-size: 30px;
     margin: 10px auto;
     padding: 40px;
 }
+.html_css_div_flex {
+    display: flex;
+    flex-direction: row;
+}
 
 .html_css_div > h2 {
     color: #041122;
@@ -319,9 +326,15 @@ font-size: 30px;
 }
 .html_css_div > p {
     color: #041122;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 140%;
 }
+
+.html_css_div_flex > div > img {
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
 .html_css_div > h3 {
     color: #000000 ;
     font-style: normal;
