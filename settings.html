@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Настройки | Education Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <div class="logo-button">Логотип</div>
+        <div class="logo-title"><p class="logo-title-text">Заголовок на главной</p></div>
+    </div>
+    <div class="menu-container">
+        <div class="menu-button">Таблица Тегов</div>
+        <div class="menu-button">Видео</div>
+        <div class="menu-button">Аудио</div>
+        <div class="menu-button">Калькулятор</div>
+    </div>
+</header>
+<main>
+<div class="settings__container">
+    <div class="settings__container_left"></div>
+    <div class="settings__container_right">
+        <form action="/action_page.php">
+            <div class="settings__userdata_wrapper">
+                <div><b>Настройки пользователя</b></div>
+                <br>
+                <div class="settings__userdata_grid_container">
+                    <div class="settings__userdata_name">
+                    <label for="email">Имя пользователя</label><br>
+                    <input class="reg_input reg_input_style" type="text" placeholder="" name="email" required>
+                    </div>
+                        <div class="settings__userdata_date">
+                        <label for="psw">Дата</label><br>
+                            <div class="settings__userdata_date_flex reg_input">
+<!--                                <select class="form-control reg_input_date reg_input_style" id="">-->
+                                <select class="reg_input_date reg_input_style" id="" name="day">
+                                    <option selected="selected" value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                    <select class="reg_input_date reg_input_style" id="" name="month" >
+                                    <option selected="selected" value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                    <option value="5">Май</option> </select>
+
+                                    <select class="reg_input_date reg_input_style" id="" name="year" >
+                                    <option selected="selected" value="1">1970</option>
+                                    <option value="2">1971</option>
+                                    <option value="3">1972</option>
+                                    <option value="4">1973</option>
+                                    <option value="5">1974</option> </select>
+<!--                                <input  class="reg_input_date reg_input_style" type="password" placeholder="1" name="psw" required>-->
+<!--                                <input class="reg_input_date reg_input_style" type="password" placeholder="2" name="psw" required>-->
+<!--                                <input  class="reg_input_date reg_input_style" type="password" placeholder="3" name="psw" required>-->
+<!--                                <input class="reg_input" type="password" placeholder="1" name="psw" required>-->
+<!--                                <input class="reg_input" type="password" placeholder="2" name="psw" required>-->
+<!--                                <input class="reg_input" type="password" placeholder="3" name="psw" required>-->
+                            </div>
+
+                        </div>
+                            <div class="settings__userdata_Login">
+                            <label for="psw">Login</label><br>
+                            <input class="reg_input reg_input_style" type="login" placeholder="" name="psw" required>
+                            </div>
+                                <div class="settings__userdata_email">
+                                <label for="psw">Email</label><br>
+                                <input class="reg_input reg_input_style" type="email" placeholder="" name="psw" required>
+                                </div>
+                </div>
+                    <br>
+                    <div><b>Смена пароля</b></div>
+                <br>
+                    <div class="settings__userdata_grid_password_container">
+                        <div class="settings__userdata_pass1">
+                    <label for="email">Новый пароль</label><br>
+                    <input class="reg_input reg_input_style" type="password" placeholder="" name="email" required>
+                        </div>
+                        <div class="settings__userdata_pass2">
+                   <label for="psw-repeat">Повторите пароль</label><br>
+                    <input class="reg_input reg_input_style" type="password" placeholder="" name="psw" required>
+                    </div>
+                </div>
+            </div>
+        </form>
+            <input class="settings__button" type="button" value="Сохранить изменения" >
+
+    </div>
+</div>
+
+
+
+</main>
+<footer>
+    <div class="footer__container">
+        <div class="footer__container_row1">
+            <div class="footer-block-wrapper"> <div class="logo-footer footer-block-wrapper">Логотип</div></div>
+            <div class="footer_text footer-block-wrapper ">Lorem ipsum dolor. sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+            <div class="footer_button_container footer-block-wrapper"><div><input type="button" value="Окей" class="footer_button"></div></div>
+        </div>
+        <div class="footer__container_row2">
+            <div class="div_2021">2021</div>
+            <div class="div-licence"><a href="test.html">Лицензионное соглашение</a></div></div>
+    </div>
+</footer>
+</body>
+</html>
