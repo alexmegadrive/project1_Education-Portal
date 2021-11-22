@@ -66,7 +66,91 @@ h1,h2,h3,h4,h5,h6 {
 }
 .header_profile_picture {
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
+
+
+
+
+.profile_picture_settings_container {
+    top: 50px;
+    right: 50px;
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile_picture_settings_container > img {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.profile_picture_settings_container_button a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+/*.profile_picture_settings {*/
+/*    !*margin-top: 15%;*!*/
+/*    !*margin-right: 15%;*!*/
+/*    position: relative;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    display: block;*/
+/*    position: relative;*/
+/*}*/
+
+
+.profile_picture_settings:hover  {
+    background: black;
+    /*filter: blur(1px);*/
+    opacity: 0.5;
+}
+
+.profile_picture_settings_container:hover .profile_picture_settings_container_button {
+    /*filter: blur(1px);*/
+    opacity: 0.7;
+    z-index: 1000;
+    height: 200px;
+    width: 200px;
+}
+
+/*ссылка на изменение фото при наведении*/
+.profile_picture_settings_container_button {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    width: 200px;
+    z-index: 0;
+    background-color: #131212;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+
+
+
 .clock-container {
     display: flex;
     flex-direction: row;
@@ -449,6 +533,9 @@ font-size: 30px;
 }
 
 .settings__container_left {
+    /*position: relative;*/
+    display: flex;
+    justify-content: right;
 flex: 2;
     background-color: #1e3351;
 }
@@ -476,7 +563,7 @@ flex: 4;
 }
 
 .reg_input_date {
-    width: 50px;
+    width: 75px;
 }
 
 .settings__userdata_grid_container {
