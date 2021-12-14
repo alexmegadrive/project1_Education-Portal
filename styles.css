@@ -381,13 +381,13 @@ font-size: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     height: auto;
     width: 82vw;
     margin: 0 auto;
 }
 .html_css_div {
-    width: 40vw;
+    width: 620px;
     height: auto;
     background: #FFFFFF;
     border: 2px solid #CBD3DE;
